@@ -5,24 +5,26 @@
     android:orientation="vertical">
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="50dp"
         android:inputType="" />
+
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="50dp"
         android:inputType="" />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/textview" />
+        android:layout_height="64dp"
+        android:text="@string/textView" />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="60dp"
         android:text="@string/plus"/>
     <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="60dp"
         android:text="@string/minus"/>
 
 </LinearLayout>
