@@ -2,5 +2,6 @@
     <string name="app_name">DaCalc</string>
     <string name="plus">+</string>
     <string name="minus">-</string>
-    <string name="textView">TextView</string>
+    <string name="inputFirstNum">Input first num</string>
+    <string name="input_second_num">Input second num</string>
 </resources>
