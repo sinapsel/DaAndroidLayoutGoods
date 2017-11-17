@@ -4,4 +4,6 @@
     <string name="minus">-</string>
     <string name="inputFirstNum">Input first num</string>
     <string name="input_second_num">Input second num</string>
+    <string name="mul">*</string>
+    <string name="div">/</string>
 </resources>

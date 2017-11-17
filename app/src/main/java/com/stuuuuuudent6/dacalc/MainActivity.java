@@ -32,4 +32,25 @@ public class MainActivity extends AppCompatActivity {
         TextView res = (TextView) this.findViewById(R.id.out);
         res.setText(String.valueOf(Double.parseDouble(num1Text) - Double.parseDouble(num2Text)));
     }
+
+    public void multiply(View v) {
+        EditText num1 = (EditText) this.findViewById(R.id.num1);
+        String num1Text = num1.getText().toString();
+        EditText num2 = (EditText) this.findViewById(R.id.num2);
+        String num2Text = num2.getText().toString();
+        TextView res = (TextView) this.findViewById(R.id.out);
+        res.setText(String.valueOf(Double.parseDouble(num1Text) * Double.parseDouble(num2Text)));
+    }
+
+    public void divide(View v) {
+        EditText num1 = (EditText) this.findViewById(R.id.num1);
+        String num1Text = num1.getText().toString();
+        EditText num2 = (EditText) this.findViewById(R.id.num2);
+        String num2Text = num2.getText().toString();
+        TextView res = (TextView) this.findViewById(R.id.out);
+        if( Double.parseDouble(num2Text) != 0)
+            res.setText(String.valueOf(Double.parseDouble(num1Text) / Double.parseDouble(num2Text)));
+        else
+            res.setText("Dividing by zero");
+    }
 }

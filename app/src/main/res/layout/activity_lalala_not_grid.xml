@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_margin="16dp">
 
     <EditText
         android:id="@+id/num1"
@@ -22,26 +23,45 @@
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:text="" />
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:text="@string/plus"
+        android:textSize="64dp"
         android:onClick="plus" />
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:text="@string/minus"
+        android:textSize="64dp"
         android:onClick="minus" />
-    <Button
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:text="@string/mul"
+        android:textSize="64dp"
         android:onClick="multiply" />
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:text="@string/div"
+        android:textSize="64dp"
         android:onClick="divide" />
-
+    </LinearLayout>
 
 </LinearLayout>

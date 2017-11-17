@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="@string/inputFirstNum"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="@string/input_second_num"
+        android:layout_above="@+id/num2"/>
+
+    <TextView
+        android:id = "@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textSize="54sp"
+        android:layout_below="@+id/num2"
+        android:text="1234"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:onClick="plus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        android:onClick="minus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mul"
+        android:onClick="multiply"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/div"
+        android:onClick="divide"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

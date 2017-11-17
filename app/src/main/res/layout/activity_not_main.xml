@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_margin="10dp">
 
     <EditText
         android:id="@+id/num1"
@@ -21,25 +22,30 @@
         android:id = "@+id/out"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:text="" />
+        android:textSize="54sp"
+        android:text="1233" />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="@string/plus"
         android:onClick="plus" />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="@string/minus"
         android:onClick="minus" />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="@string/mul"
         android:onClick="multiply" />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="@string/div"
         android:onClick="divide" />
 
